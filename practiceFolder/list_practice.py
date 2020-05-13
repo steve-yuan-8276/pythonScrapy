@@ -1,5 +1,9 @@
 letters = ['a','b','c','d','f']
-print(letters[0])
+numbers = [1,2,3,4]
+x = [letters,numbers]
+print(len(letters))
+print(x)
+print(x[0][0])
 bicycles = ['trek','canon','redline','specialized']
 print(bicycles[-1].title())
 motorcycles = ['honda','yamaha','suzuki']
