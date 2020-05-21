@@ -1,12 +1,16 @@
-print("""This is a program to evaluate traval time.
-Tell me traval distance and speed, and I will give you answear.
-""")
+import easygui
 
-distance_of_traval = int(input("Tell me traval distance: "))
-speed = int(input("Tell me the average speed: "))
+msg_print = """This is a program to evaluate traval time.
+Tell me traval distance and speed, and I will give you answear.
+"""
+
+easygui.msgbox(msg_print)
+
+distance_of_traval = easygui.integerbox(msg="Tell me traval distance: ", lowerbound=0, upperbound=10000)
+speed = easygui.integerbox(msg="Tell me the average speed: ", lowerbound=1, upperbound=300)
 
 def time_of_traval(distance_of_traval, speed):
     time_of_traval = round(distance_of_traval/speed, 2)
     return time_of_traval
 
-print(f"I guess {time_of_traval(distance_of_traval, speed)} hours.")
+easygui.msgbox(f"I guess {time_of_traval(distance_of_traval, speed)} hours.")
