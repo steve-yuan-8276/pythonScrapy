@@ -1,3 +1,5 @@
+# 题目：斐波那契数列
+
 n = int(input("Please input a integer(Input number must greater than 0.): "))
 
 def fib(n):
