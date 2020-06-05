@@ -10,3 +10,4 @@ def fib(n):
 
 for i in range(n):
     print(fib(i), end=' ')
+    i += 1
