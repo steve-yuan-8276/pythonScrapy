@@ -7,9 +7,11 @@
 
 n = int(input("Enter a integer number: "))
 
+
 def multiply(n):
     if n == 1:
         return
-    return multiply(n - 1) * n     # 定义用到了自己本身的定义，就构成了递归
+    return multiply(n - 1) * n  # 定义用到了自己本身的定义，就构成了递归
+
 
 print(f"The result is {multiply(n)}.")

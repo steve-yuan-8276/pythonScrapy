@@ -9,4 +9,4 @@ for a in player_list:
             for c in player_list:
                 if a != c and b != c:
                     if a != 'x' and c != 'x' and c != 'z':
-                        print("a VS %s, b VS %s, c VS %s" %(a, b, c))
+                        print("a VS %s, b VS %s, c VS %s" % (a, b, c))

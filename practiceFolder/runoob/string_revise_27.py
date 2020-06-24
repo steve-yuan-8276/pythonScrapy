@@ -3,11 +3,12 @@
 str_input = input("Enter a string(more the 5 words): ")
 number_str = len(str_input)
 
+
 def string_revise(str_input, number_str):
     if number_str == 0:
         return
     print(str_input[number_str - 1])
     string_revise(str_input, number_str - 1)
 
-string_revise(str_input, number_str)
 
+string_revise(str_input, number_str)

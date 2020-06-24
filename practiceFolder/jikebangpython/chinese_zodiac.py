@@ -16,7 +16,6 @@ year_input = int(input("Enter year: "))
 month_input = int(input("enter month: "))
 date_input = int(input("Enter day: "))
 
-
 while year_input:
     if 1 <= year_input <= 12:
         i = (year_input + 12) % 12
@@ -37,4 +36,3 @@ for i in range(len(date_star_sign)):
     elif month_input == 12 and date_input > 23:
         print(f"The star sign is {star_sign[0]} .")
         break
-
