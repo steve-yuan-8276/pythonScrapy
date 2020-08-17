@@ -10,9 +10,20 @@
 # 8*1=8 8*2=16 8*3=24 8*4=32 8*5=40 8*6=48 8*7=56 8*8=64
 # 9*1=9 9*2=18 9*3=27 9*4=36 9*5=45 9*6=54 9*7=63 9*8=72 9*9=81
 
+# use for loop
 for i in range(1, 10):
     for j in range(1, i + 1):
-        print("{} * {} = {}".format( i, j, i*j), end=" ")    # 使用占位符
+        print("{} * {} = {}".format( i, j, i * j), end="  ")    # 使用结束符 end="  " ，作用是取消换行
         j += 1
-    print(" ")               #作用是分行
+    print()               #作用是分行
+    i += 1
+
+# use while loop:
+i = 1
+while i < 10:
+    j = 1
+    while j < i + 1:
+        print(f"{i} * {j} = {i * j}", end="  ")
+        j += 1
+    print()
     i += 1
